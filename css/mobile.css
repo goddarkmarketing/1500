@@ -493,6 +493,14 @@
   .prod-modal__text { font-size: 15px; }
   .prod-modal__btn { min-height: 44px; width: 100%; }
 
+  .legal-modal { padding: 16px; }
+  .legal-modal__head { padding: 20px 20px 10px; }
+  .legal-modal__title { font-size: 20px; }
+  .legal-modal__body { padding: 16px 20px; font-size: 15px; }
+  .legal-modal__body h3 { font-size: 16px; }
+  .legal-modal__foot { padding: 12px 20px 20px; }
+  .legal-modal__btn { min-height: 44px; }
+
   /* --- Service page --- */
   .svc-hero {
     min-height: 340px;

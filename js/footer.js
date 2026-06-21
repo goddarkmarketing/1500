@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="footer__bottom">
       <p class="footer__copy">&copy; 2568 ${agentTitle} — ${brand} สงวนลิขสิทธิ์</p>
       <div class="footer__legal">
-        <a href="#">นโยบายความเป็นส่วนตัว</a>
-        <a href="#">ข้อกำหนดและเงื่อนไข</a>
+        <a href="#" data-legal="privacy">นโยบายความเป็นส่วนตัว</a>
+        <a href="#" data-legal="terms">ข้อกำหนดและเงื่อนไข</a>
       </div>
     </div>
   `;

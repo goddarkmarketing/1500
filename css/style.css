@@ -1120,6 +1120,109 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .footer__legal a:hover { color: var(--white); }
 
+/* ===== Legal modal (privacy / terms) ===== */
+.legal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.legal-modal[hidden] { display: none; }
+.legal-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.legal-modal__dialog {
+  position: relative;
+  width: min(100%, 720px);
+  max-height: min(88vh, 820px);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: legalModalIn 0.28s ease;
+}
+@keyframes legalModalIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.legal-modal__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 12px;
+  border-bottom: 1px solid rgba(228, 0, 124, 0.1);
+}
+.legal-modal__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--pink);
+  line-height: 1.3;
+}
+.legal-modal__close {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: background 0.2s, color 0.2s;
+}
+.legal-modal__close:hover {
+  background: var(--pink-light);
+  color: var(--pink);
+}
+.legal-modal__body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.75;
+}
+.legal-modal__body h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+  margin: 20px 0 8px;
+}
+.legal-modal__body h3:first-of-type { margin-top: 0; }
+.legal-modal__body p { margin-bottom: 12px; }
+.legal-modal__body ul,
+.legal-modal__body ol {
+  margin: 0 0 14px 1.2em;
+}
+.legal-modal__body li { margin-bottom: 6px; }
+.legal-modal__body a {
+  color: var(--pink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-modal__updated {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+.legal-modal__foot {
+  padding: 16px 24px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.legal-modal__btn {
+  min-height: 48px;
+  width: 100%;
+}
+
 /* ===== Animations ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
