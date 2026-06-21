@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const callPhone = typeof SITE_INFO !== 'undefined' ? SITE_INFO.phone : '0971142619';
+  document.querySelectorAll('.header .btn--outline.btn--sm, .mobile-nav__cta').forEach((btn) => {
+    btn.href = `tel:${callPhone}`;
+  });
+
   const revealEls = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
     entries => {

@@ -707,6 +707,23 @@
   .art-cat { min-width: 80px; }
   .art-cat__label { font-size: 13px; }
 
+  /* Article detail */
+  .art-detail-section { padding-top: calc(var(--header-h) + 16px); }
+  .art-detail__breadcrumb { padding: 14px 16px 0; font-size: 13px; }
+  .art-detail__hero { margin: 14px 16px 0; }
+  .art-detail__header { padding: 16px 16px 0; }
+  .art-detail__title { font-size: 22px; }
+  .art-detail__excerpt { font-size: 15px; }
+  .art-detail__content { padding: 20px 16px 4px; font-size: 15px; }
+  .art-detail__content h2 { font-size: 18px; margin-top: 22px; }
+  .art-detail__footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+  .art-detail__cta { width: 100%; justify-content: center; }
+  .home-art-featured__link { display: block; }
+
   /* --- Product detail page --- */
   .prod-hero { padding: 24px 0 32px; }
   .prod-hero__layout { gap: 20px; }
