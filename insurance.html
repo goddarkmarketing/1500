@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประกันภัยของเรา | เมืองไทยประกันภัย</title>
+  <meta name="description" content="เลือกความคุ้มครองที่เหมาะกับคุณ - ประกันรถยนต์ อุบัติเหตุ สุขภาพ บ้าน ท่องเที่ยว และธุรกิจ">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/insurance.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/float-contact.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Muang Thai Life Planner 4" class="logo__img">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">หน้าแรก</a>
+        <a href="insurance.html" class="nav__link nav__link--active">ประกันภัยของเรา</a>
+        <a href="service.html" class="nav__link">บริการลูกค้า</a>
+        <a href="articles.html" class="nav__link">บทความสาระน่ารู้</a>
+        <a href="about.html" class="nav__link">เกี่ยวกับเรา</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="btn btn--outline btn--sm"><span>ซื้อประกันออนไลน์</span></a>
+        <button class="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">
+          <i data-lucide="menu" class="icon icon--24" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="เมนูมือถือ">
+    <a href="index.html" class="mobile-nav__link">หน้าแรก</a>
+    <a href="insurance.html" class="mobile-nav__link">ประกันภัยของเรา</a>
+    <a href="service.html" class="mobile-nav__link">บริการลูกค้า</a>
+    <a href="articles.html" class="mobile-nav__link">บทความสาระน่ารู้</a>
+    <a href="about.html" class="mobile-nav__link">เกี่ยวกับเรา</a>
+    <a href="#" class="btn btn--primary btn--wide mobile-nav__cta">ซื้อประกันออนไลน์</a>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="ins-hero">
+      <div class="ins-hero__bg"></div>
+      <div class="ins-hero__wave"></div>
+      <div class="ins-hero__inner">
+        <nav class="ins-hero__breadcrumb" aria-label="breadcrumb">
+          <a href="index.html">หน้าแรก</a> &gt; <span>ประกันภัยของเรา</span>
+        </nav>
+        <h1 class="ins-hero__title">ประกันภัยของเรา</h1>
+        <p class="ins-hero__subtitle">เลือกหมวดประกัน ค้นหาแผนที่ใช่สำหรับคุณ</p>
+        <p class="ins-hero__desc">จิ้มเลือกหมวดประกันชีวิต หรือพิมพ์ค้นหาชื่อแผนได้ทันที ครอบคลุมแผนออมทรัพย์ มรดก เกษียณ โรคร้ายแรง อุบัติเหตุ และค่ารักษาพยาบาล</p>
+      </div>
+    </section>
+
+    <!-- ===== SEARCH ===== -->
+    <div class="prod-search-wrap">
+      <div class="prod-search">
+        <input type="search" id="productSearch" placeholder="ค้นหาชื่อแผนประกัน เช่น แฮปปี้ไลฟ์, PA, รีไทร์..." aria-label="ค้นหาแผนประกัน">
+        <span class="prod-search__icon">
+          <i data-lucide="search" class="icon icon--18" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ===== PRODUCT CATALOG ===== -->
+    <section class="section prod-catalog" id="products">
+      <div class="container">
+        <nav class="prod-chips" id="productChips" aria-label="หมวดประกันชีวิต"></nav>
+
+        <div class="prod-header reveal">
+          <h2 class="prod-header__title" id="productSectionTitle">แผนประกันชีวิตทั้งหมด</h2>
+          <span class="prod-header__count" id="productCount">พบ 0 แผน</span>
+        </div>
+
+        <div class="prod-grid" id="productGrid"></div>
+
+        <div class="prod-load-more" id="prodLoadMore" hidden>
+          <button type="button" class="btn btn--outline prod-load-more__btn" id="prodLoadMoreBtn">
+            ดูเพิ่มเติม
+            <i data-lucide="chevron-down" class="icon icon--18" aria-hidden="true"></i>
+          </button>
+          <p class="prod-load-more__hint" id="prodLoadMoreHint"></p>
+        </div>
+
+        <div class="prod-empty" id="productEmpty">
+          <div class="prod-empty__icon">🔍</div>
+          <p class="prod-empty__title">ไม่พบแผนที่ค้นหา</p>
+          <p>ลองเปลี่ยนคำค้นหา หรือเลือกหมวดอื่น</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CTA DUAL ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-dual reveal">
+          <a href="#" class="cta-box">
+            <img class="cta-box__img" src="assets/cta-advice.png" alt="ไม่แน่ใจว่าจะเลือกประกันแบบไหน? ให้เราช่วยแนะนำแผนที่เหมาะกับคุณ รับคำแนะนำ">
+          </a>
+          <div class="cta-agent" data-ins-agent-cta></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer footer--ins">
+    <div class="container" data-site-footer></div>
+  </footer>
+
+  <div class="prod-modal" id="prodModal" hidden>
+    <div class="prod-modal__backdrop" data-close-modal></div>
+    <div class="prod-modal__dialog" role="alertdialog" aria-modal="true" aria-labelledby="prodModalTitle">
+      <div class="prod-modal__icon" aria-hidden="true">
+        <i data-lucide="info" class="icon icon--24" aria-hidden="true"></i>
+      </div>
+      <h3 class="prod-modal__title" id="prodModalTitle">กำลังดำเนินการ</h3>
+      <p class="prod-modal__text">ฟีเจอร์นี้อยู่ระหว่างการพัฒนา กรุณาติดต่อ 097-114-2619 เพื่อสอบถามข้อมูลเพิ่มเติม</p>
+      <button type="button" class="btn btn--primary prod-modal__btn" data-close-modal>ตกลง</button>
+    </div>
+  </div>
+
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/lucide-init.js"></script>
+  <script src="js/site-info.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/float-contact.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/insurance.js"></script>
+</body>
+</html>

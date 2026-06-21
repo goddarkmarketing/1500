@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดแผนประกัน | เมืองไทยประกันภัย</title>
+  <meta name="description" content="รายละเอียดแผนประกันชีวิตและสุขภาพ ความคุ้มครอง เงื่อนไข และแบบฟอร์มติดต่อเจ้าหน้าที่">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/float-contact.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Muang Thai Life Planner 4" class="logo__img">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">หน้าแรก</a>
+        <a href="insurance.html" class="nav__link nav__link--active">ประกันภัยของเรา</a>
+        <a href="service.html" class="nav__link">บริการลูกค้า</a>
+        <a href="articles.html" class="nav__link">บทความสาระน่ารู้</a>
+        <a href="about.html" class="nav__link">เกี่ยวกับเรา</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="btn btn--outline btn--sm"><span>ซื้อประกันออนไลน์</span></a>
+        <button class="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">
+          <i data-lucide="menu" class="icon icon--24" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="เมนูมือถือ">
+    <a href="index.html" class="mobile-nav__link">หน้าแรก</a>
+    <a href="insurance.html" class="mobile-nav__link">ประกันภัยของเรา</a>
+    <a href="service.html" class="mobile-nav__link">บริการลูกค้า</a>
+    <a href="articles.html" class="mobile-nav__link">บทความสาระน่ารู้</a>
+    <a href="about.html" class="mobile-nav__link">เกี่ยวกับเรา</a>
+    <a href="#" class="btn btn--primary btn--wide mobile-nav__cta">ซื้อประกันออนไลน์</a>
+  </nav>
+
+  <main class="product-page" id="productPage">
+    <div class="prod-topbar">
+      <div class="container">
+        <nav class="prod-breadcrumb" id="prodBreadcrumb" aria-label="breadcrumb"></nav>
+      </div>
+    </div>
+
+    <section class="prod-hero">
+      <div class="container prod-hero__layout">
+        <div class="prod-hero__visual">
+          <img id="prodHeroImg" class="prod-hero__img" src="" alt="">
+        </div>
+        <div class="prod-hero__content">
+          <h1 class="prod-hero__title" id="prodTitle"></h1>
+          <p class="prod-hero__subtitle" id="prodSubtitle"></p>
+          <p class="prod-hero__tagline" id="prodTagline"></p>
+
+          <div class="prod-quickinfo" id="prodQuickInfo"></div>
+
+          <div class="prod-plan-panel" id="prodPlanPanel">
+            <button type="button" class="prod-plan-panel__toggle" id="prodPlanToggle" aria-expanded="true">
+              <span>ข้อมูลแผนประกันชีวิต</span>
+              <i data-lucide="chevron-down" class="icon icon--18" aria-hidden="true"></i>
+            </button>
+            <div class="prod-plan-panel__body" id="prodPlanInfo"></div>
+          </div>
+
+          <ul class="prod-links" id="prodLinks"></ul>
+
+          <div class="prod-hero__actions">
+            <a href="#prodLeadForm" class="btn btn--dark">สนใจให้เจ้าหน้าที่ติดต่อกลับ</a>
+            <a href="tel:0971142619" class="btn btn--dark-outline">เช็กเบี้ยประกัน</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-lead" id="prodLeadForm">
+      <div class="container">
+        <div class="prod-lead__panel">
+          <h2 class="prod-lead__title">สนใจแบบประกัน</h2>
+          <p class="prod-lead__desc">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับ พร้อมให้คำปรึกษาแผนที่เหมาะกับคุณ</p>
+          <form class="prod-lead__form" id="prodLeadFormEl">
+            <div class="prod-lead__grid">
+              <label class="prod-field">
+                <span>ชื่อ</span>
+                <input type="text" name="firstName" required placeholder="ชื่อ">
+              </label>
+              <label class="prod-field">
+                <span>นามสกุล</span>
+                <input type="text" name="lastName" required placeholder="นามสกุล">
+              </label>
+              <label class="prod-field">
+                <span>เบอร์โทรศัพท์</span>
+                <input type="tel" name="phone" required placeholder="08x-xxx-xxxx">
+              </label>
+              <label class="prod-field">
+                <span>อีเมล</span>
+                <input type="email" name="email" placeholder="example@email.com">
+              </label>
+              <label class="prod-field">
+                <span>จังหวัด</span>
+                <select name="province" required>
+                  <option value="">เลือกจังหวัด</option>
+                  <option>กรุงเทพมหานคร</option>
+                  <option>เชียงใหม่</option>
+                  <option>ขอนแก่น</option>
+                  <option>ภูเก็ต</option>
+                  <option>สงขลา</option>
+                </select>
+              </label>
+              <label class="prod-field">
+                <span>แผนที่สนใจ</span>
+                <select name="plan" id="prodLeadPlan" required></select>
+              </label>
+            </div>
+            <label class="prod-consent">
+              <input type="checkbox" name="consent" required>
+              <span>ข้าพเจ้ายินยอมให้บริษัทเก็บรวบรวมและใช้ข้อมูลส่วนบุคคลตามนโยบายความเป็นส่วนตัว</span>
+            </label>
+            <button type="submit" class="btn btn--dark prod-lead__submit">ส่งข้อมูล</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-content section" id="prodHighlights">
+      <div class="container">
+        <div class="prod-content__inner" id="prodContent"></div>
+      </div>
+    </section>
+
+    <section class="prod-table section section--gray" id="prodTableSection" hidden>
+      <div class="container">
+        <h2 class="prod-table__title" id="prodTableTitle"></h2>
+        <div class="prod-table__wrap">
+          <table class="prod-table" id="prodTable"></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-accordions section">
+      <div class="container">
+        <div class="prod-acc-list" id="prodAccordions"></div>
+      </div>
+    </section>
+
+    <section class="prod-promo section section--gray">
+      <div class="container">
+        <a href="tel:0971142619" class="prod-promo__banner">
+          <img src="assets/consult-cta.png?v=5" alt="ปรึกษาที่ปรึกษาประกันชีวิต โทร 097-114-2619" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <section class="prod-related section">
+      <div class="container">
+        <h2 class="prod-related__title">ผลิตภัณฑ์ที่เกี่ยวข้อง</h2>
+        <div class="prod-related__grid" id="prodRelated"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="prod-not-found" id="prodNotFound" hidden>
+    <div class="container prod-not-found__inner">
+      <h1>ไม่พบแผนประกันที่คุณค้นหา</h1>
+      <p>แผนประกันอาจถูกย้ายหรือไม่มีในระบบ กรุณาเลือกจากรายการแผนประกันทั้งหมด</p>
+      <a href="insurance.html" class="btn btn--primary">ดูแผนประกันทั้งหมด</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container" data-site-footer></div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">
+    <i data-lucide="chevron-up" class="icon icon--18" aria-hidden="true"></i>
+  </button>
+
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/lucide-init.js"></script>
+  <script src="js/site-info.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/float-contact.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

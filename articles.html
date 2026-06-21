@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทความสาระน่ารู้ | เมืองไทยประกันภัย</title>
+  <meta name="description" content="บทความและสาระน่ารู้เกี่ยวกับประกันภัย สุขภาพ การเงิน และไลฟ์สไตล์ จากเมืองไทยประกันภัย">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/articles.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/float-contact.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Muang Thai Life Planner 4" class="logo__img">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">หน้าแรก</a>
+        <a href="insurance.html" class="nav__link">ประกันภัยของเรา</a>
+        <a href="service.html" class="nav__link">บริการลูกค้า</a>
+        <a href="articles.html" class="nav__link nav__link--active">บทความสาระน่ารู้</a>
+        <a href="about.html" class="nav__link">เกี่ยวกับเรา</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="btn btn--outline btn--sm"><span>ซื้อประกันออนไลน์</span></a>
+        <button class="menu-toggle" aria-label="เปิดเมนู" aria-expanded="false">
+          <i data-lucide="menu" class="icon icon--24" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="เมนูมือถือ">
+    <a href="index.html" class="mobile-nav__link">หน้าแรก</a>
+    <a href="insurance.html" class="mobile-nav__link">ประกันภัยของเรา</a>
+    <a href="service.html" class="mobile-nav__link">บริการลูกค้า</a>
+    <a href="articles.html" class="mobile-nav__link">บทความสาระน่ารู้</a>
+    <a href="about.html" class="mobile-nav__link">เกี่ยวกับเรา</a>
+    <a href="#" class="btn btn--primary btn--wide mobile-nav__cta">ซื้อประกันออนไลน์</a>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="art-hero">
+      <div class="art-hero__bg"></div>
+      <div class="art-hero__wave"></div>
+      <div class="art-hero__inner">
+        <nav class="art-hero__breadcrumb" aria-label="breadcrumb">
+          <a href="index.html">หน้าแรก</a> &gt; <span>บทความสาระน่ารู้</span>
+        </nav>
+        <h1 class="art-hero__title">บทความและสาระน่ารู้</h1>
+        <p class="art-hero__subtitle">ความรู้ดีๆ ที่ช่วยให้คุณและคนที่คุณรัก ใช้ชีวิตอย่างมั่นใจทุกวัน</p>
+        <form class="art-hero__search" role="search">
+          <input type="search" placeholder="ค้นหาบทความที่คุณสนใจ..." aria-label="ค้นหาบทความ">
+          <button type="submit" class="art-hero__search-btn" aria-label="ค้นหา">
+            <i data-lucide="search" class="icon icon--18" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORY TABS ===== -->
+    <nav class="art-cats" aria-label="หมวดหมู่บทความ">
+      <div class="art-cats__inner">
+        <button type="button" class="art-cat art-cat--active">
+          <i data-lucide="layout-grid" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">ทั้งหมด</span>
+        </button>
+        <button type="button" class="art-cat">
+          <i data-lucide="ribbon" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">โรคร้ายแรง</span>
+        </button>
+        <button type="button" class="art-cat">
+          <i data-lucide="shield-alert" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">ประกันอุบัติเหตุ</span>
+        </button>
+        <button type="button" class="art-cat">
+          <i data-lucide="heart-pulse" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">ประกันสุขภาพ</span>
+        </button>
+        <button type="button" class="art-cat">
+          <i data-lucide="wallet" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">การเงินและการวางแผน</span>
+        </button>
+        <button type="button" class="art-cat">
+          <i data-lucide="sparkles" class="icon art-cat__icon" aria-hidden="true"></i>
+          <span class="art-cat__label">ไลฟ์สไตล์</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== RECOMMENDED + SIDEBAR ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="art-layout">
+          <div class="art-main reveal">
+            <h2 class="art-main__title">บทความแนะนำ</h2>
+
+            <article class="art-featured">
+              <img class="art-featured__img" src="assets/articles/critical-illness-cancer.png?v=1" alt="มะเร็งไม่ได้อยู่ไกล — ทำไมควรวางแผนประกันโรคร้ายแรงตั้งแต่วันนี้">
+              <div class="art-featured__body">
+                <span class="art-tag art-tag--critical">โรคร้ายแรง</span>
+                <time class="art-date">12 พฤษภาคม 2568</time>
+                <h3 class="art-featured__title">มะเร็งไม่ได้อยู่ไกล — ทำไมควรวางแผนประกันโรคร้ายแรงตั้งแต่วันนี้</h3>
+                <p class="art-featured__excerpt">ทุก 3 นาที มีผู้ป่วยมะเร็งในประเทศไทยเพิ่มขึ้น ค่ารักษาโรคร้ายแรงสูงและยาวนาน ประกันโรคร้ายแรงช่วยลดภาระทางการเงิน ให้คุณโฟกัสกับการรักษาและฟื้นตัว</p>
+                <a href="#" class="art-read-more">อ่านต่อ <i data-lucide="arrow-right" class="icon icon--14" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <div class="art-grid">
+              <article class="art-card">
+                <img class="art-card__img" src="assets/articles/cold-vs-flu.png?v=1" alt="ไข้หวัดกับไข้หวัดใหญ่ ต่างกันอย่างไร?">
+                <div class="art-card__body">
+                  <span class="art-tag art-tag--health">ประกันสุขภาพ</span>
+                  <time class="art-date">8 พฤษภาคม 2568</time>
+                  <h3 class="art-card__title">ไข้หวัดกับไข้หวัดใหญ่ ต่างกันอย่างไร?</h3>
+                  <p class="art-card__excerpt">เข้าใจความแตกต่างเพื่อดูแลสุขภาพได้ถูกทางและป้องกันโรคได้อย่างมีประสิทธิภาพ</p>
+                  <a href="#" class="art-read-more">อ่านต่อ <i data-lucide="arrow-right" class="icon icon--14" aria-hidden="true"></i></a>
+                </div>
+              </article>
+              <article class="art-card">
+                <img class="art-card__img" src="assets/articles/accident-insurance.png?v=1" alt="อุบัติเหตุเกิดได้ทุกวัน — ความคุ้มครองที่ช่วยคุณและครอบครัวได้จริง">
+                <div class="art-card__body">
+                  <span class="art-tag art-tag--accident">ประกันอุบัติเหตุ</span>
+                  <time class="art-date">6 พฤษภาคม 2568</time>
+                  <h3 class="art-card__title">อุบัติเหตุเกิดได้ทุกวัน — ความคุ้มครองที่ช่วยคุณและครอบครัวได้จริง</h3>
+                  <p class="art-card__excerpt">อุบัติเหตุเป็นสาเหตุการเสียชีวิตและทุพพลภาพอันดับต้นๆ ประกันอุบัติเหตุช่วยชดเชยค่ารักษา ค่าใช้จ่ายระหว่างพักฟื้น และดูแลครอบครัวเมื่อเกิดเหตุไม่คาดคิด</p>
+                  <a href="#" class="art-read-more">อ่านต่อ <i data-lucide="arrow-right" class="icon icon--14" aria-hidden="true"></i></a>
+                </div>
+              </article>
+              <article class="art-card">
+                <img class="art-card__img" src="assets/articles/financial-planning.png?v=1" alt="เริ่มต้นวางแผนการเงินง่ายๆ ใน 5 ขั้นตอน">
+                <div class="art-card__body">
+                  <span class="art-tag art-tag--finance">การเงินและการวางแผน</span>
+                  <time class="art-date">2 พฤษภาคม 2568</time>
+                  <h3 class="art-card__title">เริ่มต้นวางแผนการเงินง่ายๆ ใน 5 ขั้นตอน</h3>
+                  <p class="art-card__excerpt">วางแผนการเงินไม่ยากอย่างที่คิด เริ่มต้นได้วันนี้เพื่ออนาคตที่มั่นคง</p>
+                  <a href="#" class="art-read-more">อ่านต่อ <i data-lucide="arrow-right" class="icon icon--14" aria-hidden="true"></i></a>
+                </div>
+              </article>
+            </div>
+
+            <div class="art-main__cta">
+              <a href="#" class="btn btn--outline btn--lg">
+                ดูบทความทั้งหมด
+                <i data-lucide="arrow-right" class="icon icon--18" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <aside class="art-sidebar reveal">
+            <div class="art-sidebar__block">
+              <h3 class="art-sidebar__title">บทความยอดนิยม</h3>
+              <a href="#" class="popular-item">
+                <img class="popular-item__thumb" src="assets/articles/critical-illness-cancer.png?v=1" alt="">
+                <div class="popular-item__body">
+                  <div class="popular-item__title">มะเร็งไม่ได้อยู่ไกล — ทำไมควรวางแผนประกันโรคร้ายแรง</div>
+                  <time class="popular-item__date">12 พ.ค. 2568</time>
+                </div>
+              </a>
+              <a href="#" class="popular-item">
+                <img class="popular-item__thumb" src="assets/articles/cold-vs-flu.png?v=1" alt="">
+                <div class="popular-item__body">
+                  <div class="popular-item__title">ไข้หวัดกับไข้หวัดใหญ่ ต่างกันอย่างไร?</div>
+                  <time class="popular-item__date">8 พ.ค. 2568</time>
+                </div>
+              </a>
+              <a href="#" class="popular-item">
+                <img class="popular-item__thumb" src="assets/articles/health-insurance.jpg" alt="">
+                <div class="popular-item__body">
+                  <div class="popular-item__title">ทำไมต้องมีประกันสุขภาพตั้งแต่วัยทำงาน</div>
+                  <time class="popular-item__date">1 พ.ค. 2568</time>
+                </div>
+              </a>
+              <a href="#" class="popular-item">
+                <img class="popular-item__thumb" src="assets/articles/travel-checklist.jpg" alt="">
+                <div class="popular-item__body">
+                  <div class="popular-item__title">เช็กลิสต์ก่อนเดินทางต่างประเทศ</div>
+                  <time class="popular-item__date">28 เม.ย. 2568</time>
+                </div>
+              </a>
+              <a href="#" class="popular-item">
+                <img class="popular-item__thumb" src="assets/articles/accident-insurance.png?v=1" alt="">
+                <div class="popular-item__body">
+                  <div class="popular-item__title">อุบัติเหตุเกิดได้ทุกวัน — ความคุ้มครองที่ช่วยครอบครัว</div>
+                  <time class="popular-item__date">6 พ.ค. 2568</time>
+                </div>
+              </a>
+            </div>
+
+            <div class="newsletter">
+              <i data-lucide="mail-check" class="icon newsletter__icon" aria-hidden="true"></i>
+              <h3 class="newsletter__title">ไม่พลาดทุกความรู้ดีๆ</h3>
+              <p class="newsletter__desc">สมัครรับจดหมายข่าวเพื่อรับบทความและโปรโมชันล่าสุด</p>
+              <form class="newsletter__form">
+                <input type="email" class="newsletter__input" placeholder="อีเมลของคุณ" required>
+                <button type="submit" class="newsletter__btn">สมัครรับจดหมายข่าว</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST ARTICLES ===== -->
+    <section class="section section--pale">
+      <div class="container reveal">
+        <div class="latest-header">
+          <h2 class="latest-header__title">บทความล่าสุด</h2>
+          <a href="#" class="sec-row__link">
+            ดูทั้งหมด
+            <i data-lucide="arrow-right" class="icon icon--16" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="latest-grid">
+          <article class="latest-card">
+            <div class="latest-card__media">
+              <img class="latest-card__img" src="assets/articles/heart-checkup.jpg" alt="ดูแลสุขภาพหัวใจ เริ่มต้นได้จากการตรวจสุขภาพประจำปี">
+            </div>
+            <div class="latest-card__body">
+              <div class="latest-card__meta">
+                <span class="art-tag art-tag--health">ประกันสุขภาพ</span>
+                <time class="art-date">12 พฤษภาคม 2568</time>
+              </div>
+              <h3 class="latest-card__title">ดูแลสุขภาพหัวใจ เริ่มต้นได้จากการตรวจสุขภาพประจำปี</h3>
+            </div>
+          </article>
+          <article class="latest-card">
+            <div class="latest-card__media">
+              <img class="latest-card__img" src="assets/articles/travel-checklist.jpg" alt="เที่ยวต่างประเทศอย่างมั่นใจ ด้วยประกันท่องเที่ยว">
+            </div>
+            <div class="latest-card__body">
+              <div class="latest-card__meta">
+                <span class="art-tag art-tag--lifestyle">ไลฟ์สไตล์</span>
+                <time class="art-date">11 พฤษภาคม 2568</time>
+              </div>
+              <h3 class="latest-card__title">เที่ยวต่างประเทศอย่างมั่นใจ ด้วยประกันท่องเที่ยว</h3>
+            </div>
+          </article>
+          <article class="latest-card">
+            <div class="latest-card__media">
+              <img class="latest-card__img" src="assets/articles/critical-illness-cancer.png?v=1" alt="มะเร็งไม่ได้อยู่ไกล — ทำไมควรวางแผนประกันโรคร้ายแรงตั้งแต่วันนี้">
+            </div>
+            <div class="latest-card__body">
+              <div class="latest-card__meta">
+                <span class="art-tag art-tag--critical">โรคร้ายแรง</span>
+                <time class="art-date">12 พฤษภาคม 2568</time>
+              </div>
+              <h3 class="latest-card__title">มะเร็งไม่ได้อยู่ไกล — ทำไมควรวางแผนประกันโรคร้ายแรงตั้งแต่วันนี้</h3>
+            </div>
+          </article>
+          <article class="latest-card">
+            <div class="latest-card__media">
+              <img class="latest-card__img" src="assets/articles/tax-finance.jpg" alt="ลดหย่อนภาษีด้วยประกันชีวิตและประกันสุขภาพ">
+            </div>
+            <div class="latest-card__body">
+              <div class="latest-card__meta">
+                <span class="art-tag art-tag--finance">การเงินและการวางแผน</span>
+                <time class="art-date">7 พฤษภาคม 2568</time>
+              </div>
+              <h3 class="latest-card__title">ลดหย่อนภาษีด้วยประกันชีวิตและประกันสุขภาพ</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container" data-site-footer></div>
+  </footer>
+
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/lucide-init.js"></script>
+  <script src="js/site-info.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/float-contact.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/articles.js"></script>
+</body>
+</html>
