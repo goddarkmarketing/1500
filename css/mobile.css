@@ -210,6 +210,14 @@
 
   /* --- Join Us marquee --- */
   .join-us .section__header { margin-bottom: 0; }
+  .join-us__more {
+    margin-top: 24px;
+    padding-bottom: 0;
+  }
+  .join-us__more .btn {
+    width: 100%;
+    min-height: 48px;
+  }
   .join-marquee {
     margin-top: 28px;
     gap: 12px;
@@ -220,12 +228,30 @@
     height: clamp(105px, 30vw, 150px);
     border-radius: var(--radius-md);
   }
-  .join-lightbox { padding: 16px; }
-  .join-lightbox__img {
+  .gallery-lightbox { padding: 16px; }
+  .gallery-lightbox__close {
+    top: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+  }
+  .gallery-lightbox__img {
     max-width: 96vw;
-    max-height: 82vh;
+    max-height: 78vh;
     border-radius: var(--radius-md);
   }
+
+  .gallery-grid {
+    column-count: 2;
+    column-gap: 12px;
+  }
+  .gallery-grid__item {
+    margin-bottom: 12px;
+    border-radius: var(--radius-md);
+  }
+  .gal-hero { min-height: 320px; }
+  .gal-hero__inner { padding: 36px 20px 56px; }
+  .gal-hero__subtitle { font-size: 16px; }
 
   /* --- Home articles — all cards 2 columns --- */
   .home-articles .container {

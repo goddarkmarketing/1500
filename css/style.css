@@ -629,6 +629,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .join-us .section__header {
   margin-bottom: 0;
 }
+.join-us__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  padding-bottom: 8px;
+}
 .join-marquee {
   display: flex;
   flex-direction: column;
@@ -695,8 +701,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: scale(1.06);
 }
 
-/* Join Us — hover preview (full size) */
-.join-lightbox {
+/* Gallery lightbox (join-us + gallery page) */
+.gallery-lightbox {
   position: fixed;
   inset: 0;
   z-index: 9000;
@@ -712,11 +718,48 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   pointer-events: none;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.join-lightbox.is-active {
+.gallery-lightbox.is-active {
   opacity: 1;
   visibility: visible;
 }
-.join-lightbox__img {
+.gallery-lightbox.is-interactive {
+  pointer-events: auto;
+}
+.gallery-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+}
+.gallery-lightbox__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease, background 0.2s, color 0.2s;
+}
+.gallery-lightbox.is-interactive .gallery-lightbox__close {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.gallery-lightbox__close:hover {
+  background: var(--pink);
+  color: var(--white);
+}
+.gallery-lightbox__img {
+  position: relative;
+  z-index: 1;
   max-width: min(94vw, 1100px);
   max-height: 88vh;
   width: auto;
@@ -727,8 +770,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: scale(0.88) translateY(16px);
   opacity: 0;
   transition: transform 0.42s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.28s ease;
+  pointer-events: none;
 }
-.join-lightbox.is-active .join-lightbox__img {
+.gallery-lightbox.is-active .gallery-lightbox__img {
   transform: scale(1) translateY(0);
   opacity: 1;
 }
@@ -745,11 +789,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .join-marquee__row--right .join-marquee__track {
     animation: none;
   }
-  .join-lightbox__img {
+  .gallery-lightbox__img {
     transition: opacity 0.2s ease;
     transform: none;
   }
-  .join-lightbox.is-active .join-lightbox__img {
+  .gallery-lightbox.is-active .gallery-lightbox__img {
     transform: none;
   }
   .join-marquee__item,
